@@ -45,9 +45,8 @@ function createBookCard(book){
 }
 
 function loadBooks(library){
-    for(let book in library){
-        createBookCard(book);
-        console.table(book);
+    for(let i = 0; i < library.length; i++){
+        createBookCard(library[i]);
     }
 }
 
